@@ -9,6 +9,6 @@ RUN apt-get update && \
     conda clean -i && \
     conda install -v --yes -c conda-forge clickhouse-driver && \
     conda install -v --yes -c conda-forge clickhouse-sqlalchemy && \
-    pip install -i ipython-sql openpyxl torndb mysqlclient xlsxwriter pymysql
+    pip install ipython-sql openpyxl torndb mysqlclient xlsxwriter pymysql
 
 USER $NB_UID
